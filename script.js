@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeButton = document.getElementById('close-button');
 
     // Fetch image data from JSON file
-    fetch('image-data.json')
+    fetch('https://raw.githubusercontent.com/lsongwu/lsongwu.github.io/main/images/image-data.json')
         .then(response => response.json())
         .then(images => {
             // Create image elements and add to the gallery (same as before)
