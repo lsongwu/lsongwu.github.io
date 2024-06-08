@@ -6,16 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeButton = document.getElementById('close-button');
 
     // Fetch image data from JSON file
-    fetch('https://raw.githubusercontent.com/lsongwu/lsongwu.github.io/main/images/image-data.json')
+    fetch('images/image-data.json')
         .then(response => response.json())
         .then(images => {
-            // Create image elements and add to the gallery (same as before)
+            // Create image elements and add to the gallery
             images.forEach(image => {
                 const wrapper = document.createElement('div');
                 wrapper.classList.add('image-wrapper');
 
                 const link = document.createElement('a');
-                link.href = "#"; 
+                link.href = "#";
 
                 const img = document.createElement('img');
                 img.src = image.src;
@@ -25,10 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 wrapper.appendChild(link);
                 imageGallery.appendChild(wrapper);
 
+                // Text insertion logic based on textInsertion property
+                const textContent = image.textInsertion;
+                if (textContent) {
+                    const textBlock = document.createElement('div');
+                    textBlock.classList.add('text-block'); // Add a class for styling
+                    textBlock.innerHTML = textContent;
+
+                    // Insert text block after the image (assuming order)
+                    imageGallery.insertBefore(textBlock, wrapper.nextSibling);
+                }
+
                 link.addEventListener('click', (event) => {
                     event.preventDefault();
                     popupImage.src = image.src;
-                    popupText.innerHTML = image.alt; 
+                    popupText.innerHTML = image.alt;
                     popup.style.display = 'flex';
                 });
             });
@@ -41,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         popup.style.display = 'none';
     });
     popup.addEventListener('click', (event) => {
-        if (event.target === popup) { 
+        if (event.target === popup) {
             popup.style.display = 'none';
         }
     });

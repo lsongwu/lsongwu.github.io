@@ -1,12 +1,74 @@
 [
     { 
-        "src": "images/SorryDad.jpg", 
-        "alt": "Sorry Dad<br>24' x 36'<br>2022" },
+      "src": "images/FirstBite.jpg", 
+      "alt": "First Bite<br>19'' x 34''<br>2024",
+      "textInsertion": null
+      },
+    {
+      "src": "images/Visitor2.jpg",
+      "alt": "Visitor II<br>30'' x 40''<br>2024",
+      "textInsertion": "2023"
+    },
     { 
-        "src": "images/GlamorShotLowRes.jpg", 
-        "alt": "Glamor Shot<br>24' x 36'<br>2022" },
+      "src": "images/Visitor.jpg", 
+      "alt": "Visitor I<br>30'' x 40''<br>2023",
+      "textInsertion": null
+      }, 
     { 
-        "src": "images/FearandLoathingLowRes.jpg", 
-        "alt": "Fear and Loathing<br>59' x 34'<br>2022" }
+      "src": "images/TheHouseOfQuietSaints.jpg", 
+      "alt": "The Hourse of Quiet Saints<br>57'' x 61''<br>2023",
+      "textInsertion": null
+    },
+    { 
+      "src": "images/JustFriends.jpg", 
+      "alt": "Just Friends<br>48'' x 57''<br>2023",
+      "textInsertion": null
+    },
+    { 
+      "src": "images/TheFinalGirl.jpg", 
+      "alt": "The Final Girl<br>80'' x 50''<br>2023",
+      "textInsertion": null
+      },
+    { 
+      "src": "images/Stunter.jpg", 
+      "alt": "Stunter<br>49.5'' x 49.5''<br>2023",
+      "textInsertion": null
+      },
+    { 
+      "src": "images/BlueLobster.jpg", 
+      "alt": "Blue Lobster<br>48'' x 36''<br>2023",
+      "textInsertion": null
+      },
+
+    { 
+      "src": "images/CheesyAsmrMukbang.jpg", 
+      "alt": "Cheesy ASMR Mukbang<br>29'' x 41''<br>2023",
+      "textInsertion": "2022"
+      },   
+    { 
+      "src": "images/MukbangMomentlowres.jpg", 
+      "alt": "Mukbang Moment<br>48'' x 36''<br>2022",
+      "textInsertion": null
+    },
+    { 
+      "src": "images/SorryDad.jpg", 
+      "alt": "Sorry Dad<br>24'' x 36''<br>2022",
+      "textInsertion": null
+    },
+    { 
+      "src": "images/GlamorShotLowRes.jpg", 
+      "alt": "Glamor Shot<br>24'' x 36''<br>2022",
+      "textInsertion": null
+    },
+    { 
+      "src": "images/FearandLoathingLowRes.jpg", 
+      "alt": "Fear and Loathing<br>59'' x 34''<br>2022",
+      "textInsertion": null
+    },
+    { 
+      "src": "images/MomsLaptopLowres.jpg", 
+      "alt": "Mom's Laptop<br>18'' x 34''<br>2022",
+      "textInsertion": null
+    }
   ]
   
