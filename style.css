@@ -161,23 +161,6 @@ body {
     color: #000;
   }
 
-  #content-section p.bold {
-    font-weight: bold;
-  }
-
-  /* Style for italicized text */
-  #content-section p span.italic {
-    font-style: italic;
-  }
-
-  #content-section p span.bold {
-    font-weight: bold; /* Set font weight to bold */
-    color: inherit; /* Inherit color from parent paragraph */
-  }
-
-  .row .col-md-12 p span:last-child {
-    float: right; /* Float the last bold element within each paragraph */
-  }
 
   .limited-image {
     max-width: 70%;
@@ -207,4 +190,28 @@ body {
     flex-direction: column;
     font-size: 2.5em;         
     font-weight: 600;
+  }
+
+  .resume-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.8em;
+  }
+
+  .title {
+    text-align: left;
+    margin-right: 10px;
+    color: #000;
+  }
+
+  .year {
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .italic {
+    font-style: italic;
   }
