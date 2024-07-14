@@ -1,0 +1,74 @@
+[
+    { 
+      "src": "webp/FirstBite.webp", 
+      "alt": "First Bite<br>19'' x 34''<br>2024",
+      "textInsertion": null
+      },
+    {
+      "src": "webp/Visitor2.webp",
+      "alt": "Visitor II<br>30'' x 40''<br>2024",
+      "textInsertion": "2023"
+    },
+    { 
+      "src": "webp/Visitor.webp", 
+      "alt": "Visitor I<br>30'' x 40''<br>2023",
+      "textInsertion": null
+      }, 
+    { 
+      "src": "webp/TheHouseOfQuietSaints.webp", 
+      "alt": "The Hourse of Quiet Saints<br>57'' x 61''<br>2023",
+      "textInsertion": null
+    },
+    { 
+      "src": "webp/JustFriends.webp", 
+      "alt": "Just Friends<br>48'' x 57''<br>2023",
+      "textInsertion": null
+    },
+    { 
+      "src": "webp/TheFinalGirl.webp", 
+      "alt": "The Final Girl<br>80'' x 50''<br>2023",
+      "textInsertion": null
+      },
+    { 
+      "src": "webp/Stunter.webp", 
+      "alt": "Stunter<br>49.5'' x 49.5''<br>2023",
+      "textInsertion": null
+      },
+    { 
+      "src": "webp/BlueLobster.webp", 
+      "alt": "Blue Lobster<br>48'' x 36''<br>2023",
+      "textInsertion": null
+      },
+
+    { 
+      "src": "webp/CheesyAsmrMukbang.webp", 
+      "alt": "Cheesy ASMR Mukbang<br>29'' x 41''<br>2023",
+      "textInsertion": "2022"
+      },   
+    { 
+      "src": "webp/MukbangMomentlowres.webp", 
+      "alt": "Mukbang Moment<br>48'' x 36''<br>2022",
+      "textInsertion": null
+    },
+    { 
+      "src": "webp/SorryDad.webp", 
+      "alt": "Sorry Dad<br>24'' x 36''<br>2022",
+      "textInsertion": null
+    },
+    { 
+      "src": "webp/GlamorShotLowRes.webp", 
+      "alt": "Glamor Shot<br>24'' x 36''<br>2022",
+      "textInsertion": null
+    },
+    { 
+      "src": "webp/FearandLoathingLowRes.webp", 
+      "alt": "Fear and Loathing<br>59'' x 34''<br>2022",
+      "textInsertion": null
+    },
+    { 
+      "src": "webp/MomsLaptopLowres.webp", 
+      "alt": "Mom's Laptop<br>18'' x 34''<br>2022",
+      "textInsertion": null
+    }
+  ]
+  
