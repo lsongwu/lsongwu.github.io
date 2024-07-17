@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const img = document.createElement('img');
                 img.src = image.src;
                 img.alt = image.alt;
+                if (img.preload) {
+                    img.loading = "eager";
+                }
 
                 link.appendChild(img);
                 wrapper.appendChild(link);

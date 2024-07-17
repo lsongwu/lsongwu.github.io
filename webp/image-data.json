@@ -2,12 +2,14 @@
     { 
       "src": "webp/FirstBite.webp", 
       "alt": "First Bite<br>19'' x 34''<br>2024",
-      "textInsertion": null
+      "textInsertion": null,
+      "preload": true
       },
     {
       "src": "webp/Visitor2.webp",
       "alt": "Visitor II<br>30'' x 40''<br>2024",
       "textInsertion": "2023"
+      
     },
     { 
       "src": "webp/Visitor.webp", 
