@@ -161,6 +161,11 @@ body {
     color: #000;
   }
 
+  .image-caption {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+  }
 
   .limited-image {
     max-width: 70%;
@@ -169,8 +174,14 @@ body {
   
   .limited-image-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;  /* Centering properties */
+    align-items: center;
     margin-top: 60px; 
+  }
+
+  .image-caption-container {
+    width: 70%;
   }
 
   /* Instagram Link */
@@ -204,7 +215,9 @@ body {
   .title {
     text-align: left;
     margin-right: 10px;
+    flex-shrink:0;
     color: #000;
+    white-space: pre-wrap;
   }
 
   .year {
@@ -214,4 +227,13 @@ body {
 
   .italic {
     font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .title {
+        font-size: 15px;
+    }
+    .year {
+        font-size: 15px;
+    }
   }
