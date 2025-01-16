@@ -1,9 +1,44 @@
 [
+    {
+      "src": "webp/Diggers.webp", 
+      "alt": "DIGGERS<br>48'' x 60''<br>2024",
+      "textInsertion": null,
+      "preload": true
+      },
+    {
+      "src": "webp/SecretInTheSky.webp", 
+      "alt": "Secret in the Sky<br>21'' x 31''<br>2024",
+      "textInsertion": null
+      },
+    {
+      "src": "webp/BigHeadI.webp", 
+      "alt": "Big Head I<br>34'' x 36''<br>2024",
+      "textInsertion": null
+      },
+    {
+      "src": "webp/BigHeadII.webp", 
+      "alt": "Big Head II<br>34'' x 36''<br>2024",
+      "textInsertion": null
+      },
+    {
+      "src": "webp/LaCittadellaDeLeSaints.webp", 
+      "alt": "La Cittadella de Le Saints (The Citadel of the Saints)<br>31'' x 43''<br>2024",
+      "textInsertion": null
+      },
+    {
+      "src": "webp/WickedMountains.webp", 
+      "alt": "Wicked Mountains<br>51'' x 61''<br>2024",
+      "textInsertion": null
+      },
+    {
+      "src": "webp/ALawnFire.webp", 
+      "alt": "A Lawn Fire<br>67'' x 48''<br>2024",
+      "textInsertion": null
+      },
     { 
       "src": "webp/FirstBite.webp", 
       "alt": "First Bite<br>19'' x 34''<br>2024",
-      "textInsertion": null,
-      "preload": true
+      "textInsertion": null
       },
     {
       "src": "webp/Visitor2.webp",
