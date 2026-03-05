@@ -1,62 +1,24 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const imageGallery = document.getElementById('image-gallery');
-    const popup = document.getElementById('popup');
-    const popupImage = document.getElementById('popup-image');
-    const popupText = document.getElementById('popup-text');
-    const closeButton = document.getElementById('close-button');
+// Top link visibility on scroll
+const topLink = document.querySelector('.top-link');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        topLink.classList.add('visible');
+    } else {
+        topLink.classList.remove('visible');
+    }
+});
 
-    // Fetch image data from JSON file
-    fetch('webp/image-data.json')
-        .then(response => response.json())
-        .then(images => {
-            // Create image elements and add to the gallery
-            images.forEach(image => {
-                const wrapper = document.createElement('div');
-                wrapper.classList.add('image-wrapper');
-
-                const link = document.createElement('a');
-                link.href = "#";
-
-                const img = document.createElement('img');
-                img.src = image.src;
-                img.alt = image.alt;
-                if (img.preload) {
-                    img.loading = "eager";
-                }
-
-                link.appendChild(img);
-                wrapper.appendChild(link);
-                imageGallery.appendChild(wrapper);
-
-                // Text insertion logic based on textInsertion property
-                const textContent = image.textInsertion;
-                if (textContent) {
-                    const textBlock = document.createElement('div');
-                    textBlock.classList.add('text-block'); // Add a class for styling
-                    textBlock.innerHTML = textContent;
-
-                    // Insert text block after the image (assuming order)
-                    imageGallery.insertBefore(textBlock, wrapper.nextSibling);
-                }
-
-                link.addEventListener('click', (event) => {
-                    event.preventDefault();
-                    popupImage.src = image.src;
-                    popupText.innerHTML = image.alt;
-                    popup.style.display = 'flex';
-                });
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+            e.preventDefault();
+            const element = document.querySelector(href);
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
             });
-        })
-        .catch(error => {
-            console.error('Error loading image data:', error);
-        });
-
-    closeButton.addEventListener('click', () => {
-        popup.style.display = 'none';
-    });
-    popup.addEventListener('click', (event) => {
-        if (event.target === popup) {
-            popup.style.display = 'none';
         }
     });
 });

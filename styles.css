@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+    background-color: #fff;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+/* Fixed Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.header-left .logo {
+    font-weight: 400;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #4f1aff;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #4f1aff;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* Fixed Date/Time */
+.datetime {
+    display: none;
+}
+
+/* Header Statement */
+.header-statement {
+    display: none;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 840px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+/* Project Section */
+.project-section {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    margin-bottom: 1.5rem;
+}
+
+.project-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.project-text-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text h2 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.project-text h2 a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+.project-year {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 0.15rem;
+    line-height: 1.1;
+}
+
+.project-description {
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: -0.02em;
+    text-align: justify;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+}
+
+.about-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.about-column h3 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #4f1aff;
+    margin-bottom: 1rem;
+}
+
+.about-column p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.12;
+    margin-bottom: 0.7rem;
+    color: rgba(0, 0, 0, 1);
+}
+
+.about-column p a {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.about-column strong,
+.about-column b,
+.about-column em,
+.about-column i {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about-column:first-child h3 {
+    margin-bottom: 0.55rem;
+}
+
+.about-column:first-child .about-contact {
+    line-height: 1.12;
+    margin-bottom: 0.28rem;
+}
+
+.about-column:first-child .about-bio {
+    margin-top: 0;
+    line-height: 1.12;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}
+
+.about-column:first-child .about-cv {
+    margin-top: 0.35rem;
+    text-align: left;
+}
+
+.about-column:first-child .about-bio a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.about-column p a:hover {
+    opacity: 0.7;
+}
+
+/* Fixed Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    background-color: transparent;
+    font-size: 0.85rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #4f1aff;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* Top Link */
+.top-link {
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.85rem;
+    font-weight: 400;
+    display: none;
+}
+
+.top-link.visible {
+    display: block;
+}
+
+/* Add padding to main content for fixed footer */
+main {
+    padding-bottom: 4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 0.9rem 1rem;
+    }
+
+    .datetime {
+        right: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .header-statement {
+        margin-top: 4rem;
+        padding: 2rem 1rem;
+    }
+
+    .header-statement h1 {
+        font-size: 1.5rem;
+    }
+
+    .project-section {
+        padding: 2rem 1rem;
+    }
+
+    .project-text {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about-section {
+        padding: 2rem 1rem;
+    }
+
+    .about-columns {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .top-link {
+        right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.75rem 0.75rem;
+    }
+
+    .header-left .logo,
+    .header-right a {
+        font-size: 0.85rem;
+    }
+
+    .datetime {
+        right: 0.75rem;
+        top: 0.75rem;
+        font-size: 0.7rem;
+    }
+
+    .datetime div {
+        line-height: 1.2;
+    }
+
+    .header-statement {
+        margin-top: 3.5rem;
+        padding: 1.5rem 0.75rem;
+    }
+
+    .header-statement h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-statement p {
+        font-size: 0.85rem;
+    }
+
+    .project-section {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .project-text {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .project-image {
+        margin-bottom: 1rem;
+    }
+
+    .project-text h2 {
+        font-size: 0.85rem;
+    }
+
+    .about-section {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .about-columns {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .footer {
+        padding: 0.75rem;
+        font-size: 0.75rem;
+    }
+
+    main {
+        padding-bottom: 3.5rem;
+    }
+
+    .top-link {
+        right: 0.75rem;
+        bottom: 2.75rem;
+    }
+}
